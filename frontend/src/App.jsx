@@ -32,8 +32,8 @@ export default function App() {
         setUploadedPNGData();
         //react-query
         const response = await fetch(
-          //`https://vercel-backend-ws6h.vercel.app/getFilteredIconsFromSVG`,
-          `http://localhost:3001/getFilteredIconsFromSVG`,
+          `https://vercel-backend-ws6h.vercel.app/getFilteredIconsFromSVG`,
+          // `http://localhost:3001/getFilteredIconsFromSVG`,
           {
             method: "POST",
             headers: {
@@ -75,8 +75,8 @@ export default function App() {
         const base64File = await convertToBase64(uploadedPNGData);
         const userInput = encodeURIComponent(base64File)
         const response = await fetch(
-          // `https://monorepo-kohl-phi.vercel.app/getFilteredIconsFromPNG`,
-          `http://localhost:3001/getFilteredIconsFromPNG`,
+          `https://vercel-backend-ws6h.vercel.app/getFilteredIconsFromPNG`,
+          // `http://localhost:3001/getFilteredIconsFromPNG`,
           {
             method: "POST",
             headers: {
